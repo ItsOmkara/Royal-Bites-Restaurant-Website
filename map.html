@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    .animated-item {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+      }
+      
+      .animated-item.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animated-item">
+          <img src="https://i.pinimg.com/originals/5c/f3/dc/5cf3dc9b57ad28bc6434f828e11fd83f.jpg" alt="Image 1">
+          <h2 style="font-size: 60px;"><center>Messi</center></h2>
+          <p style="font-size: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt odio mollitia necessitatibus magni minima officiis aspernatur quasi accusamus labore laboriosam voluptatibus fugit delectus veniam sed maxime explicabo possimus, quod qui.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eveniet quia, ipsum amet nihil temporibus ad quasi neque quis sequi odit perspiciatis! Nostrum accusamus eius dignissimos, nemo quasi fugit quia.
+
+          </p>
+        </div>
+        <div class="animated-item">
+          <img src="https://i.pinimg.com/originals/5c/f3/dc/5cf3dc9b57ad28bc6434f828e11fd83f.jpg" alt="Image 2">
+          <h2 style="font-size: 60px;"> <center>Ronaldo</center></h2>
+          <p style="font-size: 30px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias quis optio nam odio voluptates dolorem, modi aut beatae, asperiores nisi eaque accusamus expedita accusantium, voluptate at debitis eum ipsa. Soluta.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas optio ducimus impedit. Ipsa tenetur dolore animi perspiciatis dolores! Similique fuga nostrum labore consequuntur quam incidunt cum quos tempora consectetur magnam?
+          </p>
+        </div>
+        <!-- Add more items as needed -->
+      </div>
+      <script src="mapscript.js"></script>
+</body>
+</html>

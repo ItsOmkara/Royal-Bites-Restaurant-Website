@@ -1,0 +1,948 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+body {
+    margin: 0;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    /* box-sizing: border-box; */
+   
+}
+.git{
+    height: calc(100vh - 22px);
+    background-image: url();
+    background-size:cover ;
+    padding: 20px 70px;
+}
+header{
+    height: 100px;
+    font-family: "Cabin",sans-serif;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    /* background-color: #45a049; */
+    /* background-image: url("https://img.freepik.com/free-photo/top-view-seasonings-salt-inside-bowls-dark-blue-background-pepper-salt-seasoning-photo-color_140725-30880.jpg?size=626&ext=jpg&ga=GA1.1.1467430420.1709134669&semt=ais"); */
+    background-size: cover;
+}
+section{
+  font-family: 'Poppins', sans-serif;
+}
+header
+{
+  position: absolute;
+  top: 0;
+  left: -6%;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  right: 60%;
+  font-family: "Poppins", sans-serif;
+}
+.logo{
+  font-family: "Poppins", sans-serif;
+}
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  position: relative;
+  font-size: 30px;
+  top: -8px;
+  left: 38px;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: #03a9f4; */
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-20px);
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  padding: 2px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 30px;
+  color: #111;
+  font-family: "Poppins", sans-serif;
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+
+.navigation-bar {
+    text-align: center;
+    position: relative;
+    left: 32%;
+    font-family:"Cabin",sans-serif;
+    font-size: 30px;
+}
+
+.navigation-bar ul {
+    list-style: none;
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust spacing between menu items */
+}
+
+.navigation-bar ul li:last-child {
+    margin-right: 0; /* Remove margin-right for the last menu item */
+}
+
+.navigation-bar ul li a {
+  font-size: 25px;
+    color: #fefefe;
+    text-decoration: none;
+    /* color: ; Menu item text color */
+    /* font-weight: bold; */
+    position: relative; /* Position for the underline */
+    transition: color 0.3s; /* Smooth color transition effect */
+}
+
+.underline {
+    position: absolute; /* Absolute position for the underline */
+    bottom: -2px; /* Place the underline below the text */
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
+    width: 0;
+    height: 2px; /* Underline height */
+    background-color: transparent; /* Underline color */
+    transition: width 0.6s, background-color 0.6s; /* Smooth transition effect */
+}
+
+.navigation-bar ul li a:hover {
+  color: #e85d04; /* Change text color on hover */
+}
+.navigation-bar ul li a.active-link .underline { 
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color:#e85d04; 
+}
+
+.navigation-bar ul li a:hover .underline {
+    width: 100%; /* Full width on hover */
+    background-color: #e85d04; /* Change underline color on hover */
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    position: absolute;
+    top: -20%;
+    left: 1%;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 550px !important; /* Adjust height as needed */
+    width: 1200px !important; /* Adjust width as needed */
+    animation-name: modal-open;
+    animation-duration: 1.5s;
+    font-family: Arial, sans-serif;
+    background-image: url("https://meikong.com.pk/wp-content/uploads/2017/11/h9-parallax-img-1.jpg");
+    background-size: cover;
+}
+
+/* Add other styles as needed */
+  @keyframes modal-open {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  .close {
+    color: #aaa;
+    display: flex;
+    position:absolute;
+    top: -1.5%;
+    left: 97%;
+    font-size: 50px;
+    font-weight: bolder;
+    width: 20px;
+    padding: 0px 2px;
+    /* border: 3px solid black ; */
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  form {
+    margin-top: -14px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+   
+  }
+  input[type="date"],
+  input[type="time"],
+  input[type="number"],
+  input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+    width: 90%;
+    padding: 5px;
+    margin-bottom: -50px;
+}
+  button{
+    height: 67px;
+    width: 120px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 1%;
+    background-color: #4CAF50;
+    transition: background-color 0.3s;
+}
+  button:hover {
+    background-color: #45a049;
+}
+  h1{
+    line-height: 20px;
+    font-weight: bolder;
+
+}
+ /* sevices */
+ .service-grid {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+      background-image: url();
+    background-size: cover;
+  }
+  .row{
+    background-image:url() ;
+  }
+  .service-title h2{
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+  }
+   .service-title h4 {
+    position: relative;
+    display: inline-block;
+  }
+  .service-icon {
+    position: relative;
+    font-family: "Abril Fatface",serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .service-title p {
+    padding: 0 190px;
+    margin-bottom: 10px;
+  }
+  .about-info-text h2 {
+    margin-bottom: 23px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: .9;
+  }
+  .about-info-text p {
+    padding: 0 100px;
+    font-size: 18px;
+    margin-bottom: 26px;
+      position: relative;
+  }
+  .about-content p {
+    margin-bottom: 0;
+  }
+  .about-info-text a {
+    margin-bottom: 20px;
+      position: relative;
+  }
+  .service-icon i {
+    font-size: 40px;
+    color: #e8bc00;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .service-wrap {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+    position: relative;
+    height: 415px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-wrap p{
+      position: relative;
+      font-family: "Public Sans", sans-serif;
+      font-optical-sizing: auto;
+  }
+  
+  .service-wrap:hover {
+    background-image: url(https://i.pinimg.com/originals/98/7b/2c/987b2ceeb04a0976810deca19010ffea.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrap:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrap:hover h4,.service-wrap:hover p{
+    color: #fff;
+  }
+  .service-wrap h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrap a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  .service-wrapservice2 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+      height: 415px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-wrapservice2 p{
+      position: relative;
+      font-family: "Public Sans", sans-serif;
+      font-optical-sizing: auto;
+  }
+  .service-wrapservice2:hover {
+    background-image: url(https://media.istockphoto.com/id/1327433011/photo/pav-bhaji-indian-street-food-bharuch-gujarat-india.jpg?s=612x612&w=0&k=20&c=R_Nl3Ig6qTNMidQkjXH0It8MINDJY-C5GMiIv-HxO04=);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrapservice2:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrapservice2:hover h4,.service-wrapservice2:hover p{
+    color: #fff;
+  }
+  .service-wrapservice2 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrapservice2 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  .service-wrap-3 {
+    border: 1px solid #e6e6e6;
+    padding: 30px 30px;
+      position: relative;
+      height: 415px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-wrap-3 p{
+      position: relative;
+      font-family: "Public Sans", sans-serif;
+      font-optical-sizing: auto;
+  }
+  
+  .service-wrap-3:hover {
+    background-image: url(https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrap-3:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrap-3:hover h4,.service-wrap-3:hover p{
+    color: #fff;
+  }
+  .service-wrap-3 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrap-3 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  .service-wrap-3 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+  }
+  
+  .service-wrap-3 p{
+      position: relative;
+  }
+  
+  .service-wrap-3:hover {
+    background-image: url(https://www.funfoodfrolic.com/wp-content/uploads/2023/04/Dal-Makhani-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrap-3:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrap-3:hover h4,.service-wrap-3:hover p{
+    color: #fff;
+  }
+  .service-wrap-3 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrap-3 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  /* 4 */
+  .service-wrap-4 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+      height: 415px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-wrap-4 p{
+      position: relative;
+      font-family: "Public Sans", sans-serif;
+      font-optical-sizing: auto;
+  }
+  
+  .service-wrap-4:hover {
+    background-image: url(https://t4.ftcdn.net/jpg/02/75/39/13/360_F_275391367_Hro3Ql1iFsCNtd86zWYuqa0Qe5cc7goE.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrap-4:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrap-4:hover h4,.service-wrap-4:hover p{
+    color: #fff;
+  }
+  .service-wrap-4 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrap-4 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  /* 5 */
+  .service-wrap-5 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+      height: 415px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-wrap-5 p{
+      position: relative;
+      font-family: "Public Sans", sans-serif;
+      font-optical-sizing: auto;
+  }
+  
+  .service-wrap-5:hover {
+    background-image: url(https://t4.ftcdn.net/jpg/06/13/65/75/360_F_613657567_NiNPLoP5GB9cZfoom8lWUgZnN01UtXA0.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrap-5:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrap-5:hover h4,.service-wrap-5:hover p{
+    color: #fff;
+  }
+  .service-wrap-5 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrap-5 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  /* 6 */
+  .service-wrap-6 {
+    border: 1px solid #e6e6e6;
+    padding: 50px 30px;
+      position: relative;
+      height: 415px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-wrap-6 p{
+      position: relative;
+      font-family: "Public Sans", sans-serif;
+      font-optical-sizing: auto;
+  }
+  
+  .service-wrap-6:hover {
+    background-image: url(https://cdn.tasteatlas.com//images/dishes/617f5d93003c43a992244eff2dd52b6d.jpg?w=905&h=510);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: local;
+    transition: all .5s;
+  }
+  .service-wrap-6:hover:before {
+    background: rgba(0, 0, 0, 0.2901960784313726);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    content: "";
+    top: 0;
+    opacity: 1;
+  }
+  
+  .service-wrap-6:hover h4,.service-wrap-6:hover p{
+    color: #fff;
+  }
+  .service-wrap-6 h4 {
+    font-weight: 600;
+    color: #1e2331;
+    margin-bottom: 17px;
+    font-size: 18px;
+    text-transform: capitalize;
+      position: relative;
+  }
+  .service-wrap-6 a {
+    font-size: 14px;
+    font-weight: 600;
+      position: relative;
+  
+  }
+  footer {
+    height: 480px;
+    background-color: #121212;
+    padding: 60px 20px;
+  }
+  footer .text {
+    max-width: 500px;
+    margin: auto;
+    color: #fff;
+  }
+  footer .text h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 19px;
+    letter-spacing: 1.9px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .text .fa-asterisk {
+    font-size: 12px;
+    color: #a96700;
+    display: flex;
+    justify-content: center;
+  }
+  footer .text p {
+    padding: 12px 0px 0px 0px;
+    line-height: 27px;
+    display:flex;
+    text-align: center;
+    font-family: 'Cabin',sans-serif;
+  }
+  footer .contact-container {
+    padding: 40px 0;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: 42px;
+  }
+  footer .contact-container > div {
+    flex: 1;
+    position: relative;
+  
+  }
+  footer .contact-container h3 {
+    font-size: 19px;
+    letter-spacing: 1.9px;
+    color: #eee;
+    position: relative;
+    left: 196px; 
+    font-family: 'Sans Code Pro',sans-serif;
+  }
+  #hero h3{
+    display:flex;
+    position: relative;
+    left: 30px;
+  }
+  footer .social-media .links a {
+    margin: 0 10px;
+    font-size: 25px;
+    color: #eee;
+    /* display: flex; */
+    top: 14px;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 172px;
+  }
+  footer .newsletter input {
+    padding: 0px;
+    width: 270px;
+    background-color: #eee;
+    border: none;
+    margin-left: -15px;
+    display: flex;
+    position: absolute;
+    left: 31%;
+    top: 10px;
+  }
+  footer.newsletter h3{
+    color: #eee;
+  }
+  footer .newsletter i {
+    margin-left: -40px;
+    vertical-align: middle;
+    font-size: 21px;
+    color: black;
+    position: absolute;
+    top: 17px;
+    left:421px;
+    
+  }
+  .copyright {
+    /* display: flex;
+    position: relative; */
+    padding: 21px 40px 30px;
+    background-color: #262526;
+    height: 130px;
+    position: relative;
+    top: 10%;
+  }
+  .copyright1{
+    /* display: flex;
+    position: relative; */
+    padding: 21px 40px 30px;
+    background-color: #262526;
+    height: 130px;
+    position: relative;
+    top: -2%;
+  }
+  .copyright .svg-up {
+    display: flex;
+    position: relative;
+    top: -28%;
+    left: 50%;
+    margin-left: -96px;
+    margin-top: -50px;
+  }
+  .copyright .arrow-up {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    width: 45px;
+    height: 30px;
+    top: -66px;
+    left: 685px;
+    color: #fff;
+    line-height: 1.9
+  }
+  .copyright ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin-top: -14px;
+    font-family:'Cabin',sans-serif;
+  }
+  .copyright li {
+    color: #919191;
+    font-size: 14px;
+  }
+  .copyright li:not(:last-of-type):after {
+    content: '•';
+    margin: 10px;
+  }
+  .copyright .CTA {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-family:'Cabin',sans-serif;
+  }
+  .copyright .CTA li a {
+    color: #919191;
+    text-decoration: none;
+  }
+  
+
+
